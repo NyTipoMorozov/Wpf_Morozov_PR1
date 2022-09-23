@@ -15,23 +15,13 @@ using System.Windows.Shapes;
 namespace Wpf_Morozov_PR1
 {
     /// <summary>
-    /// Логика взаимодействия для Window2.xaml
+    /// Логика взаимодействия для Window3.xaml
     /// </summary>
-    public partial class Window2 : Window
+    public partial class Window3 : Window
     {
-        public Window2()
+        public Window3()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void win1_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
