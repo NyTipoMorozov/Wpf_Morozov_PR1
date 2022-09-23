@@ -29,5 +29,11 @@ namespace Wpf_Morozov_PR1
         {
             MessageBox.Show("Привет, группа ИСП");
         }
+
+        private void win1_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 window1 = new Window1();
+            window1.Show();
+        }
     }
 }

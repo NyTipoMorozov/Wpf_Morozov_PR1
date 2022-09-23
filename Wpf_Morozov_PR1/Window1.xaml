@@ -1,0 +1,19 @@
+﻿<Window x:Class="Wpf_Morozov_PR1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_Morozov_PR1"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid RenderTransformOrigin="0.492,0.482">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF76E0FF"/>
+                <GradientStop Color="Red" Offset="1"/>
+                <GradientStop Color="White" Offset="0.482"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+    </Grid>
+</Window>
