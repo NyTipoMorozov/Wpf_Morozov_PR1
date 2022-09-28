@@ -10,17 +10,18 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="8*"/>
             <ColumnDefinition Width="65*"/>
-            <ColumnDefinition Width="323*"/>
+            <ColumnDefinition Width="202*"/>
+            <ColumnDefinition Width="121*"/>
         </Grid.ColumnDefinitions>
         <Button Content="Кнопка" HorizontalAlignment="Left" Margin="0,78,0,0" VerticalAlignment="Top" Width="122" Height="43" Click="Button_Click" FontSize="20" Grid.Column="1">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="LightBlue" Offset="0"/>
+                    <GradientStop Color="White" Offset="0"/>
                     <GradientStop Color="DarkBlue" Offset="1"/>
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Canvas Grid.ColumnSpan="3">
+        <Canvas Grid.ColumnSpan="4">
             <Button x:Name="Win1" Canvas.Left="19" Canvas.Top="10" Height="49" Width="116" Content="Открыть окно" Click="win1_Click">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -30,5 +31,6 @@
                 </Button.Background>
             </Button>
         </Canvas>
+        
     </Grid>
 </Window>
