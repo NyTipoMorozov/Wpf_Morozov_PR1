@@ -34,6 +34,12 @@ namespace Wpf_Morozov_PR1
             MainWindow MainWindow = new MainWindow();
             MainWindow.Show();
         }
+
+        private void Win2_Click(object sender, RoutedEventArgs e)
+        {
+            Window4 Window4 = new Window4();
+            Window4.Show();
+        }
     }
     }
 

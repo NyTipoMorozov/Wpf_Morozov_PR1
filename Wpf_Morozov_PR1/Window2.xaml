@@ -7,23 +7,31 @@
         mc:Ignorable="d"
         Title="Window2" Height="450" Width="800">
     <Grid>
-       
-        <Canvas Margin="0,0,23,28">
-            <Label Canvas.Left="10" Canvas.Top="9" Content="Регистрация пользователя" />
+        <Canvas>
+            <Label Canvas.Left="10" Canvas.Top="10" Content="Регистрация пользователя" />
             <Label Canvas.Left="10" Canvas.Top="40" Content="ФИО" />
             <TextBox Canvas.Left="70" Canvas.Top="40" Width="200" />
             <Label Canvas.Left="10" Canvas.Top="70" Content="Емаил" />
             <TextBox Canvas.Left="70" Canvas.Top="70" Width="200" />
-            <Button Canvas.Left="155" Canvas.Top="110" Content="Зарегистрироваться" Click="Button_Click" Height="27" />
-            </Canvas>
-            <Button x:Name="Win1" Canvas.Left="19" Canvas.Top="10" Content="Открыть окно" Click="win1_Click" Margin="160,152,529,239">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="White" Offset="0"/>
-                        <GradientStop Color="DarkBlue" Offset="1"/>
-                    </LinearGradientBrush>
-                </Button.Background>
-            </Button>
-   
+            <Button Canvas.Left="155" Canvas.Top="159" Content="Зарегистрироваться" Click="Button_Click" />
+        </Canvas>
+        <Button x:Name="Win1" Canvas.Left="19" Canvas.Top="10" Content="Открыть окно" Click="win1_Click" Margin="421,19,268,372">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="DarkBlue" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Win2" Canvas.Left="19" Canvas.Top="10" Content="Открыть окно" Click="Win2_Click" Margin="542,19,147,372">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FFD1D1FF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+
     </Grid>
 </Window>

@@ -5,9 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf_Morozov_PR1"
         mc:Ignorable="d"
-        Title="Window4" Height="450" Width="800">
-    <Grid>
-        <Button Content="Сохранить" HorizontalAlignment="Left" Margin="313,20,0,0" VerticalAlignment="Top" Width="88" Height="30" Click="Button_Click" FontSize="14">
+        Title="Window4" Height="451.333" Width="789.333">
+    <Grid Margin="0,-1,-560,-131" RenderTransformOrigin="0.5,0.5">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="-0.139"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="288*"/>
+            <RowDefinition Height="131*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="69*"/>
+            <ColumnDefinition Width="707*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Сохранить" HorizontalAlignment="Left" Margin="186,20,0,0" VerticalAlignment="Top" Width="88" Height="30" Click="Button_Click_1" FontSize="14" Grid.Column="2">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="White" Offset="0"/>
@@ -15,7 +32,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button Content="Открыть" HorizontalAlignment="Left" Margin="205,20,0,0" VerticalAlignment="Top" Width="88" Height="30" Click="Button_Click" FontSize="14">
+        <Button Content="Открыть" HorizontalAlignment="Left" Margin="78,20,0,0" VerticalAlignment="Top" Width="88" Height="30" Click="Button_Click2" FontSize="14" Grid.Column="2">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="White" Offset="0"/>
@@ -23,7 +40,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button Content="Закрыть" HorizontalAlignment="Left" Margin="420,20,0,0" VerticalAlignment="Top" Width="88" Height="30" Click="Button_Click" FontSize="14">
+        <Button Content="Закрыть" HorizontalAlignment="Left" Margin="293,20,0,0" VerticalAlignment="Top" Width="88" Height="30" Click="Button_Click_3" FontSize="14" Grid.Column="2">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="White" Offset="0"/>
@@ -31,7 +48,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button Content="Обработать" HorizontalAlignment="Left" Margin="533,20,0,0" VerticalAlignment="Top" Width="88" Height="30" Click="Button_Click" FontSize="14">
+        <Button Content="Обработать" HorizontalAlignment="Left" Margin="406,20,0,0" VerticalAlignment="Top" Width="88" Height="30" Click="Button_Click" FontSize="14" Grid.Column="2">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="White" Offset="0"/>
@@ -39,7 +56,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button Content="О программе" HorizontalAlignment="Left" Margin="642,20,0,0" VerticalAlignment="Top" Width="109" Height="30" Click="Button_Click" FontSize="14">
+        <Button Content="О программе" HorizontalAlignment="Left" Margin="515,20,0,0" VerticalAlignment="Top" Width="109" Height="30" Click="Button_Click_1" FontSize="14" Grid.Column="2">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="White" Offset="0"/>
@@ -47,8 +64,21 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Label Canvas.Left="10" Canvas.Top="40" Content="Последние документы" />
-
-
+        <Label Content="Последние документы" Grid.Column="1" Margin="9,20,652,248" Grid.ColumnSpan="2" />
+        <Label Content="1.txt" Grid.Column="1" Margin="10,60,0,206" />
+        <Label Content="2.txt" Grid.Column="1" Margin="10,83,0,181" />
+        <Label Content="6.txt" Grid.Column="1" Margin="9,183,669,70" Grid.ColumnSpan="2" />
+        <Label Content="3.txt" Grid.Column="1" Margin="10,108,0,156" />
+        <Label Content="4.txt" Grid.Column="1" Margin="9,133,0,125" />
+        <Label Content="5.txt" Grid.Column="1" Margin="9,155,44,156" />
+        <Label Content="1.txt" Grid.Column="2" Margin="78,68,587,197" FontWeight="Bold" />
+        <Label Content="2.txt" Grid.Column="2" Margin="125,68,477,186" />
+        <Label Content="3.txt" Grid.Column="2" Margin="171,68,489,197" />
+        <Label Content="А" Grid.Column="2" Margin="78,134,0,115" Background="Yellow" HorizontalAlignment="Left" VerticalAlignment="Center" Height="40" Width="42" Cursor="None" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label Content="B" Grid.Column="2" Margin="147,134,0,115" Background="Red" HorizontalAlignment="Left" VerticalAlignment="Center" Height="40" Width="42" Cursor="None" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label Content="C" Grid.Column="2" Margin="215,134,0,115" Background="#FF87CF83" HorizontalAlignment="Left" VerticalAlignment="Center" Height="40" Width="42" Cursor="None" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label Content="D" Grid.Column="2" Margin="281,134,0,115" Background="#FF0068FF" HorizontalAlignment="Left" VerticalAlignment="Center" Height="40" Width="42" Cursor="None" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label Content="E" Grid.Column="2" Margin="347,134,0,115" Background="#FF808073" HorizontalAlignment="Left" VerticalAlignment="Center" Height="40" Width="42" Cursor="None" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label Content="F" Grid.Column="2" Margin="421,134,0,115" Background="#FFE0E0AB" HorizontalAlignment="Left" VerticalAlignment="Center" Height="40" Width="42" Cursor="None" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
     </Grid>
 </Window>
